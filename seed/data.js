@@ -1,9 +1,8 @@
-import mongoose from '../db/connection.js'
 import connection from '../db/connection.js'
 import data from './books.json' assert { type: 'json' }
 import Book from '../models/Book.js'
 
-let bookData = data.map(item => {
+let bookData = data.results.books.map(item => {
     const book = {}
     book.name = item.title
     book.author = item.author
@@ -17,7 +16,7 @@ Book
     .deleteMany({})
     .then(() => Book.create(bookData))
     .then(() => console.log("Done!"))
-    .then(() => mongoose.disconnect())
+    .then(() => process.exit())
     .catch(error => console.log("Error", error))
 
 console.log(bookData)
