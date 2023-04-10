@@ -4,7 +4,7 @@ import Book from '../models/Book.js'
 
 let bookData = data.results.books.map(item => {
     const book = {}
-    book.name = item.title
+    book.title = item.title
     book.author = item.author
     book.description = item.description
     book.rank = item.rank

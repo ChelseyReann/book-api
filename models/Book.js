@@ -3,18 +3,18 @@ const Schema = mongoose.Schema;
 
 let Book = new Schema({
   title: { 
-    type: String 
+    type: String,
 },
   author: { 
-    type: String 
+    type: String,
 },
-  description: { 
+description: { 
     type: String, 
 },
 rank: { 
     type: Number, 
 },
-  book_image: { 
+book_image: { 
     type: String 
 }
 });
