@@ -11,6 +11,9 @@ let Book = new Schema({
   description: { 
     type: String, 
 },
+rank: { 
+    type: Number, 
+},
   "book_image": { 
     type: String 
 }
