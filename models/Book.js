@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "../db/connection.js";
 const Schema = mongoose.Schema;
 
 let Book = new Schema({
