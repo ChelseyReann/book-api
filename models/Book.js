@@ -1,4 +1,4 @@
-import mongoose from "../db/connection.js";
+import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 let Book = new Schema({
@@ -14,7 +14,7 @@ let Book = new Schema({
 rank: { 
     type: Number, 
 },
-  "book_image": { 
+  book_image: { 
     type: String 
 }
 });
