@@ -12,10 +12,10 @@ let bookData = data.results.books.map(item => {
 })
 
 const insertData = async () => {
-    await Book.deleteMany({});
-    await Book.create(bookData);
-    console.log("Done!");
-    process.exit();
+    await Book.deleteMany({})
+    await Book.create(bookData)
+    console.log("Done!")
+    process.exit()
 }
 
 insertData()
