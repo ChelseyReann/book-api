@@ -22,20 +22,20 @@ export const getBook = async (req, res) => {
   }
 };
 
-export const getBookTitle = async (req, res) => {
-  try {
-    const { title } = req.params;
+// export const getBookTitle = async (req, res) => {
+//   try {
+//     const { title } = req.params;
 
-    const book = await Book.findOne({ title }); // Use findOne() to find a book by title
-    if (!book) {
-      return res.status(404).json({ error: 'Book not found' });
-    }
-    res.json(book);
-  } catch (error) {
-    console.log(error.message);
-    res.status(500).json({ error: error.message });
-  }
-};
+//     const book = await Book.findOne({ title }); // Use findOne() to find a book by title
+//     if (!book) {
+//       return res.status(404).json({ error: 'Book not found' });
+//     }
+//     res.json(book);
+//   } catch (error) {
+//     console.log(error.message);
+//     res.status(500).json({ error: error.message });
+//   }
+// };
 
 export const createBook = async (req, res) => {
   try {
