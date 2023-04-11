@@ -7,8 +7,13 @@ const MONGODB_URI =
 // This is for Model.findByIdAndUpdate method, specifically so that {new: true} is the default
 mongoose.set("returnOriginal", false);
 
+let mongooseConfig = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}
+
 mongoose
-  .connect(MONGODB_URI)
+  .connect(MONGODB_URI, mongooseConfig)
   .catch((error) =>
     console.log("Error connecting to MongoDB: ", error.message)
   );
