@@ -9,11 +9,11 @@ I made an API using the [NY Times Developer Network](https://developer.nytimes.c
 This API lists the following information:
 - Title of the book,
 - Author of the book,
-- A brief description of the book synopsis
-- The book's ranking on the Best Seller List
+- A brief description of the book synopsis,
+- The book's ranking on the Best Seller List,
 - An image of the book
 
-See below for a snippet of the JSON format
+See below for a snippet of the JSON format:
 
 [![Screenshot-2023-04-11-at-6-56-17-PM.png](https://i.postimg.cc/d1ss0DZk/Screenshot-2023-04-11-at-6-56-17-PM.png)](https://postimg.cc/McL2P6Dq)
 
