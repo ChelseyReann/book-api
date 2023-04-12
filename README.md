@@ -17,9 +17,12 @@ See below for a snippet of the JSON format:
 
 ![JSON Format Screenshot](./assets/jsonformat.png?raw=true "JSON Format Screenshot")
 
-<!-- [![Screenshot-2023-04-11-at-6-56-17-PM.png](https://i.postimg.cc/d1ss0DZk/Screenshot-2023-04-11-at-6-56-17-PM.png)](https://postimg.cc/McL2P6Dq) -->
-
 ## How to Use
+The below link will take you to the full array of all the books on the Best Seller List
+
+```
+https://nytimes-book-api.herokuapp.com/books
+```
 
 #### Heading 4
 
