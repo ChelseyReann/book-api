@@ -15,10 +15,7 @@ This API lists the following information:
 
 See below for a snippet of the JSON format:
 
-![json format screenshot](https://github.com/chelseyreann/book-api/blob/main/Screenshot-2023-04-12-at-10.30.39-AM.png?raw=true)
-
-
-![json format screnshot](http://Screenshot-2023-04-12-at-10.30.39-AM.png)
+![Json Format Screenshot](./assets/jsonformat.png?raw=true "Title")
 
 <!-- [![Screenshot-2023-04-11-at-6-56-17-PM.png](https://i.postimg.cc/d1ss0DZk/Screenshot-2023-04-11-at-6-56-17-PM.png)](https://postimg.cc/McL2P6Dq) -->
 
