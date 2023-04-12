@@ -52,6 +52,21 @@ export const getBookAuthor = async (req, res) => {
   }
 };
 
+export const getBookRank = async (req, res) => {
+  try {
+    const { rank } = req.params;
+
+    const book = await Book.findOne({ rank }); // Use findOne() to find a book by rank
+    if (!book) {
+      return res.status(404).json({ error: 'Book not found' });
+    }
+    res.json(book);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ error: error.message });
+  }
+};
+
 export const createBook = async (req, res) => {
   try {
     const book = new Book(req.body);
