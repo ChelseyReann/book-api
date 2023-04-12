@@ -12,12 +12,6 @@ let bookData = data.results.books.map(item => {
     return book
 })
 
-// Book
-//     .deleteMany({})
-//     .then(() => Book.create(bookData))
-//     .then(() => console.log("Done!"))
-//     .then(() => process.exit())
-//     .catch(error => console.log("Error", error))
 
 const insertData = async () => {
     try {
