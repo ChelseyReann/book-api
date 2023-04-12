@@ -18,11 +18,68 @@ See below for a snippet of the JSON format:
 ![JSON Format Screenshot](./assets/jsonformat.png?raw=true "JSON Format Screenshot")
 
 ## How to Use
-The below link will take you to the full array of all the books on the Best Seller List
+The below link will take you to the full array of all the books on the Best Seller List.
 
 ```
 https://nytimes-book-api.herokuapp.com/books
 ```
+---
+**Looking up a book by title**
+
+To search for a book by title, use the below endpoint followed by the book title.
+
+```
+https://nytimes-book-api.herokuapp.com/books/title
+```
+
+For example, if you wanted to look up the book titled 'Tomorrow, and Tomorrow, and Tomorrow' you would use the link below.
+
+```
+https://nytimes-book-api.herokuapp.com/books/title/Tomorrow, and Tomorrow, and Tomorrow
+```
+
+Which should display the below:
+
+![Tomorrow, and Tomorrow, and Tomorrow](./assets/Tomorrow.png?raw=true "Tomorrow, and Tomorrow, and Tomorrow JSON")
+
+---
+**Looking up a book by author**
+
+To search for a book by author, use the below endpoint followed by the book author.
+
+```
+https://nytimes-book-api.herokuapp.com/books/author
+```
+For example, if you wanted to look up the book written by Harlan Coben you would use the link below.
+
+```
+https://nytimes-book-api.herokuapp.com/books/author/harlan coben
+```
+
+Which should display the below:
+
+![Harlan Coben](./assets/Harlan.png?raw=true "Harlan Coben JSON")
+
+- Please note searching by title or author is NOT case-sensitive so you can write the title or author in all caps, lowercase, or any other variation and it will still find the title or author!
+
+---
+**Looking up a book by its rank**
+
+To search for a book by its ranking in the Best Seller List, use the below endpoint followed by the book's rank.
+
+```
+https://nytimes-book-api.herokuapp.com/books/rank
+```
+For example, if you wanted to look up the 3rd book in the ranking you would use the link below.
+
+```
+https://nytimes-book-api.herokuapp.com/books/rank/3
+```
+
+Which should display the below:
+
+![3rd book in rank](./assets/3.png?raw=true "3rd book in rank JSON")
+
 
 #### Heading 4
 
