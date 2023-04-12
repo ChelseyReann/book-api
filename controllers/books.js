@@ -24,9 +24,12 @@ export const getBook = async (req, res) => {
 
 export const getBookTitle = async (req, res) => {
   try {
-    const { title } = req.params;
+    let { title } = req.params;
 
-    const book = await Book.findOne({ title }); // Use findOne() to find a book by title
+    // Convert the title to lowercase for case-insensitive search
+    const regexTitle = new RegExp(`^${title}$`, 'i');
+
+    const book = await Book.findOne({ title: regexTitle }); // Use regex for case-insensitive search
     if (!book) {
       return res.status(404).json({ error: 'Book not found' });
     }
@@ -39,9 +42,11 @@ export const getBookTitle = async (req, res) => {
 
 export const getBookAuthor = async (req, res) => {
   try {
-    const { author } = req.params;
+    let { author } = req.params;
 
-    const book = await Book.findOne({ author }); // Use findOne() to find a book by author
+    const regexTitle = new RegExp(`^${author}$`, 'i')
+
+    const book = await Book.findOne({ author: regexTitle }); // Use findOne() to find a book by author
     if (!book) {
       return res.status(404).json({ error: 'Book not found' });
     }
