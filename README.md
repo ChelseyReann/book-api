@@ -80,6 +80,10 @@ Which should display the below:
 
 ![3rd book in rank](./assets/3.png?raw=true "3rd book in rank JSON")
 
+## CRUD Functionality
+
+## Resources
+
 
 #### Heading 4
 

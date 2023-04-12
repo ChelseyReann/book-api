@@ -43,7 +43,8 @@ export const getBookTitle = async (req, res) => {
 export const getBookAuthor = async (req, res) => {
   try {
     let { author } = req.params;
-
+  
+    // Convert the author to lowercase for case-insensitive search
     const regexTitle = new RegExp(`^${author}$`, 'i')
 
     const book = await Book.findOne({ author: regexTitle }); // Use findOne() to find a book by author
