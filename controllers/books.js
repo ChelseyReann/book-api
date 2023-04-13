@@ -30,7 +30,8 @@ export const getBookTitle = async (req, res) => {
     // Convert the title to lowercase for case-insensitive search
     const regexTitle = new RegExp(`^${title}$`, 'i');
 
-    const book = await Book.findOne({ title: regexTitle }); // Use regex for case-insensitive search
+    // Use regex for case-insensitive search
+    const book = await Book.findOne({ title: regexTitle });
     if (!book) {
       return res.status(404).json({ error: 'Book not found' });
     }

@@ -150,3 +150,8 @@ http://localhost:4000/books
 - [Node Fetch](https://www.npmjs.com/package/node-fetch)
 - [JSON Viewer Google Chrome Extenstion](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
 - [VS Code](https://code.visualstudio.com/)
+
+## Connect with Me!
+[Portfolio](https://chelseyreann.github.io/)
+
+[LinkedIn](https://www.linkedin.com/in/chelsey-alphonso/)
