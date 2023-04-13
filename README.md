@@ -104,6 +104,16 @@ For example, if you wanted to update 'Hang The Moon' because it's moved in the r
 https://nytimes-book-api.herokuapp.com/books/6436c8e02dc8794112af741b
 ```
 
+## Installation
+If you would like to use this API for your own project follow the steps below:
+
+1. Install a Code Editor of your choice. I use [VS Code](https://code.visualstudio.com/)
+1. Fork and clone this repository
+1. Install the below dependencies 
+```
+npm i express mongoose morgan chalk cors node-fetch
+```
+
 ## Resources
 - [NY Times Developer Network](https://developer.nytimes.com/)
 - [Postman](https://www.postman.com/)
