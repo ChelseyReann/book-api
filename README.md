@@ -6,6 +6,8 @@
 ## Introduction
 I made an API using the [NY Times Developer Network](https://developer.nytimes.com/). I am constantly looking at the NY Times Best Seller List and I thought what better way to use that data than to make it in to an API that I can use for future projects.
 
+The Best Seller List is updated every week and consists of 15 books. This list is from April 5th, 2023.
+
 This API lists the following information:
 - Title of the book,
 - Author of the book,
@@ -81,94 +83,34 @@ Which should display the below:
 ![3rd book in rank](./assets/3.png?raw=true "3rd book in rank JSON")
 
 ## CRUD Functionality
+To create a new book aka POST: 
+
+Use the below endpoint with an API platform, ie. Postman. Make sure to switch to the POST setting, click on Body, and select raw and JSON.
+
+```
+https://nytimes-book-api.herokuapp.com/books
+```
+
+---
+To update (PUT) or delete (DELETE):
+
+Use the same endpoint on an API platform, ie. Postman. Make sure to switch to the appropriate HTTP verb. Any sort of update or deletion will require the id of the book that you are updating or deleting. 
+
+For example, if you wanted to update 'Hang The Moon' because it's moved in the ranking. You would use the below endpoint.
+
+```
+https://nytimes-book-api.herokuapp.com/books/6436c8e02dc8794112af741b
+```
 
 ## Resources
-
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-<!-- Italics -->
-
-_This text_ is italic
-
-_This text_ is italic
-
-<!-- Strong -->
-
-**This text** is italic
-
-**This text** is italic
-
-<!-- Strikethrough -->
-
-~~This text~~ is strikethrough
-
-<!-- Horizontal Rule -->
-
----
-
----
-
-
-<!-- UL -->
-
-- Item 1
-- Item 2
-- Item 3
-  - Nested Item 1
-  - Nested Item 2
-
-<!-- OL -->
-
-1. Item 1
-1. Item 2
-1. Item 3
-
-<!-- Inline Code Block -->
-
-`<p>This is a paragraph</p>`
-
-<!-- Images -->
-
-![Markdown Logo](https://markdown-here.com/img/icon256.png)
-
-<!-- Github Markdown -->
-
-<!-- Code Blocks -->
-
-```bash
-  npm install
-  npm start
-```
-
-```javascript
-function add(num1, num2) {
-  return num1 + num2;
-}
-```
-
-```python
-  def add(num1, num2):
-    return num1 + num2
-```
-
-<!-- Tables -->
-
-| Day    | Deliverable                                      | Status                |
-| ------ | ------------------------------------------------ | --------------------- |
-| Dec 17 | Prompt/Wireframe/Priority Matrix/Timeframes      | xxx                   |
-| Dec 21 | Project Approval                                 | xxx                   |
-| Dec 22 | Core Application Structure (HTML, CSS, JS, etc.) | xxx                   |
-| Dec 23 | Pseudocode/Actual                                | xxx                   |
-| Dec 23 | 3 hrs                                            | MVP                   |
-| Jan 05 | 3 hrs                                            | Project Presentatiion |
-
-<!-- Task List -->
-
-- [x] Task 1
-- [x] Task 2
-- [] Task 3
+[NY Times Developer Network](https://developer.nytimes.com/)
+[Postman](https://www.postman.com/)
+[Node](https://nodejs.org/en)
+[Express](https://expressjs.com/)
+[Morgan](https://github.com/expressjs/morgan)
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+[Chalk](https://www.npmjs.com/package/chalk)
+[Mongoose](https://mongoosejs.com/)
+[MongoDB](https://www.mongodb.com/)
+[JSON](https://www.json.org/json-en.html)
+[Node Fetch](https://www.npmjs.com/package/node-fetch)
