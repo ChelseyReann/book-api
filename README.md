@@ -1,6 +1,6 @@
 # NY Times Best Seller Books List API 📚
 ---
-> All the books that are fit to print
+> All of the best books that are fit to print
 ---
 
 ## Introduction
@@ -21,6 +21,8 @@ See below for a snippet of the JSON format:
 
 ## How to Use
 The below link will take you to the full array of all the books on the Best Seller List.
+
+NOTE: This site will be easier to view if you have a JSON viewer extension installed on your browser to display/"pretty" the large datasets in your browser. I use the [JSON Viewer Extension on Google Chrome.](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
 
 ```
 https://nytimes-book-api.herokuapp.com/books
@@ -114,3 +116,4 @@ https://nytimes-book-api.herokuapp.com/books/6436c8e02dc8794112af741b
 - [MongoDB](https://www.mongodb.com/)
 - [JSON](https://www.json.org/json-en.html)
 - [Node Fetch](https://www.npmjs.com/package/node-fetch)
+- [JSON Viewer Google Chrome Extenstion](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
