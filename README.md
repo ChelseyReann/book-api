@@ -120,15 +120,12 @@ If you need to delete a book make sure you have the same selections as the below
 If you would like to use this API for your own project follow the steps below:
 
 - Install a Code Editor of your choice. I use [VS Code](https://code.visualstudio.com/)
+
 - Fork and clone this repository
+
 - Intialize npm (node package manager) in your terminal by typing in the below
 ```
-npm init -y
-```
-
-- Install the below dependencies 
-```
-npm i express mongoose morgan chalk cors node-fetch
+npm i
 ```
 
 - To create a localized version of the database, the data must be seeded first. Seeding the data takes it from it's raw JSON format and formats it into an easy to read model. I have made a custom script for this step so you can type the below in your terminal.
