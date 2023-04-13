@@ -83,7 +83,7 @@ Which should display the below:
 ![3rd book in rank](./assets/3.png?raw=true "3rd book in rank JSON")
 
 ## CRUD Functionality
-To create a new book aka POST: 
+To create (POST) a new book: 
 
 Use the below endpoint with an API platform, ie. Postman. Make sure to switch to the POST setting, click on Body, and select raw and JSON.
 
