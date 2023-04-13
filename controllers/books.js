@@ -3,6 +3,7 @@ import Book from "../models/Book.js";
 export const getBooks = async (req, res) => {
   try {
     const books = await Book.find();
+    books.sort((a,b) => a.rank - b.rank)
     res.json(books);
   } catch (error) {
     console.log(error.message);
