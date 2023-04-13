@@ -93,25 +93,45 @@ Use the below endpoint with an API platform, ie. Postman. Make sure to switch to
 https://nytimes-book-api.herokuapp.com/books
 ```
 
+Make sure you have the same selections as the below screenshot.
+
+![Postman Post Screenshot](./assets/PostmanPOST.png?raw=true "Postman Post Screenshot")
+
 ---
 To update (PUT) or delete (DELETE):
 
 Use the same endpoint on an API platform, ie. Postman. Make sure to switch to the appropriate HTTP verb. Any sort of update or deletion will require the id of the book that you are updating or deleting. 
 
-For example, if you wanted to update 'Hang The Moon' because it's moved in the ranking. You would use the below endpoint.
+For example, if you wanted to update 'Hang The Moon' because it's moved in the ranking. You would use the below endpoint with the id that correlates to 'Hang the Moon'.
 
 ```
 https://nytimes-book-api.herokuapp.com/books/6436c8e02dc8794112af741b
 ```
 
+If you are updating a book make sure you have the same selections as the below screenshot.
+
+![Postman Put Screenshot](./assets/PostmanPUT.png?raw=true "Postman Put Screenshot")
+
+If you need to delete a book make sure you have the same selections as the below screenshot.
+
+![Postman Delete Screenshot](./assets/PostmanDELETE.png?raw=true "Postman Delete Screenshot")
+
 ## Installation
 If you would like to use this API for your own project follow the steps below:
 
-1. Install a Code Editor of your choice. I use [VS Code](https://code.visualstudio.com/)
-1. Fork and clone this repository
-1. Install the below dependencies 
+- Install a Code Editor of your choice. I use [VS Code](https://code.visualstudio.com/)
+- Fork and clone this repository
+- Install the below dependencies 
 ```
 npm i express mongoose morgan chalk cors node-fetch
+```
+- Run the start script to initialize
+```
+npm start
+```
+- The API will be visible in your local host 4000. You can copy the below code and paste it in your browser
+```
+http://localhost:4000/books
 ```
 
 ## Resources
@@ -127,3 +147,4 @@ npm i express mongoose morgan chalk cors node-fetch
 - [JSON](https://www.json.org/json-en.html)
 - [Node Fetch](https://www.npmjs.com/package/node-fetch)
 - [JSON Viewer Google Chrome Extenstion](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
+- [VS Code](https://code.visualstudio.com/)
