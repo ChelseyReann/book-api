@@ -121,14 +121,26 @@ If you would like to use this API for your own project follow the steps below:
 
 - Install a Code Editor of your choice. I use [VS Code](https://code.visualstudio.com/)
 - Fork and clone this repository
+- Intialize npm (node package manager) in your terminal by typing in the below
+```
+npm init -y
+```
+
 - Install the below dependencies 
 ```
 npm i express mongoose morgan chalk cors node-fetch
 ```
-- Run the start script to initialize
+
+- To create a localized version of the database, the data must be seeded first. Seeding the data takes it from it's raw JSON format and formats it into an easy to read model. I have made a custom script for this step so you can type the below in your terminal.
 ```
-npm start
+npm run db:seed
 ```
+
+- To keep your connection to the local database I have created a custom script for that as well. Type the below next in your terminal.
+```
+npm run dev
+```
+
 - The API will be visible in your local host 4000. You can copy the below code and paste it in your browser
 ```
 http://localhost:4000/books
