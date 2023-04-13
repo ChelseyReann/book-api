@@ -85,6 +85,18 @@ Which should display the below:
 ![3rd book in rank](./assets/3.png?raw=true "3rd book in rank JSON")
 
 ## CRUD Functionality
+To read (GET) all the books in the list:
+
+Use the below endpoint with an API platform, ie. Postman. Make sure to have the GET setting selected.
+```
+https://nytimes-book-api.herokuapp.com/books
+```
+
+Make sure you have the same selections as the below screenshot.
+
+![Postman Get Screenshot](./assets/PostmanGET.png?raw=true "Postman Get Screenshot")
+
+---
 To create (POST) a new book: 
 
 Use the below endpoint with an API platform, ie. Postman. Make sure to switch to the POST setting, click on Body, and select raw and JSON.
